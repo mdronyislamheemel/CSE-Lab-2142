@@ -5,6 +5,13 @@ public class StudentList {
 	public static void main(String[] args) {
 
 //		Check arguments
+		//if the arguments is not given or given string's length is greater than 1 then it will not terminate 
+
+		if(args.length == 0 || args.length > 1)
+		{
+			System.out.println("Program terminated.\nPlease Enter a valid argument");
+			return;
+		}
 		if(args[0].equals("a"))
 		{
 			System.out.println("Loading data ...");			
